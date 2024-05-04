@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="3dp"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/style2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cloth_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/shirt"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cloth_name"
+            android:layout_toRightOf="@id/cloth_image"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:text="Shirt"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/cloth_name"
+            android:src="@drawable/arrow_down"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

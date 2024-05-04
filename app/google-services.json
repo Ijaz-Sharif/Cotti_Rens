@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "868979757976",
+    "project_id": "cotti-rens",
+    "storage_bucket": "cotti-rens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868979757976:android:66eafa5042a9f4027fd1ed",
+        "android_client_info": {
+          "package_name": "com.example.cottirens"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtj4aKFTcDxy7xYb4OZLYbQFYRP6A_nXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

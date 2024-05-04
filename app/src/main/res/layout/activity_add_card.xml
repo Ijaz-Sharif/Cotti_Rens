@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context=".Screens.AddCardActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:onClick="finish"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adding Card"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_height="match_parent">
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_gravity="center"
+             android:layout_height="200dp"
+             android:layout_margin="5dp"
+             android:src="@drawable/payment"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:layout_marginLeft="20dp"
+             android:text="Name on Card"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:hint="Enter your name"
+             android:paddingLeft="10dp"
+             android:id="@+id/user_name"
+             android:background="@drawable/style"
+             android:layout_marginRight="20dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="20dp"
+             android:text="Card Number"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:hint="xxxx xxxx xxxx xxxx"
+             android:paddingLeft="10dp"
+             android:id="@+id/card_number"
+             android:paddingRight="10dp"
+             android:drawableRight="@drawable/card_img"
+             android:background="@drawable/style"
+             android:layout_marginRight="20dp"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:weightSum="2"
+              android:layout_marginTop="10dp"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                 android:layout_marginLeft="20dp"
+                 android:orientation="vertical"
+                 android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="Expiration"/>
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="10dp"
+                     android:hint="MM/YY"
+                     android:id="@+id/expire_date"
+                     android:paddingLeft="10dp"
+                     android:background="@drawable/style"
+                     android:layout_marginRight="20dp"/>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="20dp"
+                 android:orientation="vertical"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="20sp"
+                     android:textColor="@color/black"
+                     android:layout_height="wrap_content"
+                     android:text="CVC"/>
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="10dp"
+                     android:hint="1234"
+                     android:inputType="number"
+                     android:maxLength="4"
+                     android:id="@+id/cvc"
+                     android:paddingLeft="10dp"
+                     android:background="@drawable/style"
+                     android:layout_marginRight="20dp"/>
+             </LinearLayout>
+         </LinearLayout>
+         <Button
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:text="Add"
+             android:onClick="addCard"
+             android:textColor="@color/white"
+             app:backgroundTint="@color/blue"
+             android:layout_marginBottom="20dp"
+             android:background="@drawable/view_bg"
+             tools:ignore="HardcodedText" />
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

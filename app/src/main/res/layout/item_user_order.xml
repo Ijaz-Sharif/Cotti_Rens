@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="3dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/left_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/black"
+            android:layout_toLeftOf="@id/order_number"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/order_number"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:text="Shirt"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/right_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_toRightOf="@id/order_number"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/order_number"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:id="@+id/cloth_image"
+                android:src="@drawable/shirt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/r_time"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/time_img"
+                android:text="Remaining Time"
+                android:drawablePadding="5dp"
+                android:layout_toRightOf="@id/cloth_image"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/remaining_time"
+                android:text="Remaining Time"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/r_time"
+                android:layout_toRightOf="@id/cloth_image"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/cloth_name"
+                android:text="Remaining Time"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/remaining_time"
+                android:layout_toRightOf="@id/cloth_image"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
